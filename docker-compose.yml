@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  patent-vault-backend:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      - PORT=3000
+      - JWT_SECRET=supersecure
+      - ETH_RPC_URL=https://rpc.ankr.com/eth_sepolia
+      - DEPLOYER_PRIVATE_KEY=your_eth_private_key_here
+    volumes:
+      - ./userkeys:/app/userkeys
+      - ./database.sqlite3:/app/database.sqlite3

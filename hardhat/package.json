@@ -1,0 +1,10 @@
+{
+  "name": "patent-vault-hardhat",
+  "version": "1.0.0",
+  "scripts": {
+    "compile": "npx hardhat compile"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.0"
+  }
+}
